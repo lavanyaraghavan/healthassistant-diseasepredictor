@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Smart Doc</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+  <div class="container">
+      <br>
+      <h2 class="header center orange-text">Health Assistant & Disease Predictor</h2>
+  <div>
+    <br><br>
+<center>
+<iframe
+    allow="microphone;"
+    width="700"
+    height="500"
+    src="https://console.dialogflow.com/api-client/demo/embedded/45716962-bc45-4d15-bdac-867e61f933f9">
+</iframe>
+</div>
+</center>
+
+
+  <div class="section no-pad-bot" id="index-banner">
+      <div class="row center"><br>
+        <h5 class="header col s12 light">Predict the probability of Breast cancer
+        <br>
+        </h5>
+      </div>
+
+    <div class="row">
+    <form action='/breastcancer' method="post" class="col s12">
+      <div class="row">
+        <div class="input-field col s4">
+            <label for="first_name"><b>Clump Thickness</b></label>
+            <br>
+          <input placeholder="Clump Thickness" name="ClumpThickness" id="first_name" type="text" class="validate">
+        </div>
+        <div class="input-field col s4">
+
+          <label for="last_name"><b>Unformity of Cell Size</b></label>
+            <br>
+          <input id="last_name" name="CellSize" placeholder="Unformity of Cell Size"  type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="_name"><b>Unformity of Cell Shape</b></label>
+            <br>
+          <input id="_name" name="CellShape" placeholder="Unformity of Cell Shape" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="fourth"><b>Marginal Adhesion</b></label>
+            <br>
+          <input id="fourth" name="MarginalAdhesion" placeholder="Marginal Adhesion" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="fifth"><b>Single Epithelial Cell Size</b></label>
+            <br>
+          <input id="fifth" name="SingleEpithelialCellSize" placeholder="Single Epithelial Cell Size" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="sixth"><b>Bare Nuclei</b></label>
+            <br>
+          <input id="sixth" name="BareNuclei" placeholder="Bare Nuclei" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="seventh"><b>Bland Chromatin</b></label>
+            <br>
+          <input id="seventh" name="BlandChromatin" placeholder="Bland Chromatin" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="eight"><b>Normal Nucleoli</b></label>
+            <br>
+          <input id="eight" name="NormalNucleoli" placeholder="Normal Nucleoli" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="ninth"><b>Mitoses</b></label>
+            <br>
+          <input id="ninth" name="Mitoses" placeholder="Mitoses" type="text" class="validate">
+
+        </div>
+
+      </div>
+
+      <div class="row center">
+
+          <button type="submit" class="btn-large waves-effect waves-light orange">Predict Probability</button>
+      </div>
+    </form>
+      </div>
+
+      
+    </div>
+  </div>
+
+
+    <br><br>
+  </div>
+  </div>>
+  </body>
+</html>
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Smart Doc</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+  <div class="container">
+      <br>
+      <h2 class="header center orange-text">Health Assistant & Disease Predictor</h2>
+  <div>
+    <br><br>
+<center>
+<iframe
+    allow="microphone;"
+    width="700"
+    height="500"
+    src="https://console.dialogflow.com/api-client/demo/embedded/45716962-bc45-4d15-bdac-867e61f933f9">
+</iframe>
+</div>
+</center>
+
+
+  <div class="section no-pad-bot" id="index-banner">
+      <div class="row center"><br>
+        <h5 class="header col s12 light">Predict the probability of liver disease
+        <br>
+        </h5>
+      </div>
+
+    <div class="row">
+    <form action='/liv' method="post" class="col s12">
+      <div class="row">
+        <div class="input-field col s4">
+            <label for="first_name"><b>MCV</b></label>
+            <br>
+          <input placeholder="corpuscular volume" name="MCV" id="first_name" type="text" class="validate">
+        </div>
+        <div class="input-field col s4">
+
+          <label for="last_name"><b>ALKPHOS</b></label>
+            <br>
+          <input id="last_name" name="ALKPHOS" placeholder="Alkaline phosphotase"  type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="_name"><b>SGPT</b></label>
+            <br>
+          <input id="_name" name="SGPT" placeholder="Alanine aminotransferase" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="fourth"><b>SGOT</b></label>
+            <br>
+          <input id="fourth" name="SGOT" placeholder="Aspartate aminotransferase" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="fifth"><b>GAMMAGT</b></label>
+            <br>
+          <input id="fifth" name="GAMMAGT" placeholder="Gamma-glutamyl transpeptidase" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="sixth"><b>DRINKS</b></label>
+            <br>
+          <input id="sixth" name="DRINKS" placeholder="Number of half-pint equivalents of alcoholic beverages drunk per day" type="text" class="validate">
+
+        </div>
+
+
+      </div>
+
+      <div class="row center">
+
+          <button type="submit" class="btn-large waves-effect waves-light orange">Predict Probability</button>
+      </div>
+    </form>
+      </div>
+
+      <br>
+        {{pred}}<br>
+
+    </div>
+  </div>
+
+
+    <br><br>
+  </div>
+  </div>>
+  </body>
+</html>
+

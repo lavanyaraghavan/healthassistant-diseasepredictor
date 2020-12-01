@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Smart Doc</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+  <div class="container">
+      <br>
+      <h2 class="header center orange-text">Health Assistant & Disease Predictor</h2>
+  <div>
+    <br><br>
+<center>
+<iframe
+    allow="microphone;"
+    width="700"
+    height="500"
+    src="https://console.dialogflow.com/api-client/demo/embedded/45716962-bc45-4d15-bdac-867e61f933f9">
+</iframe>
+</div>
+</center>
+
+
+  <div class="section no-pad-bot" id="index-banner">
+      <div class="row center"><br>
+        <h5 class="header col s12 light">Predict the probability of Heart disease
+        </h5>
+      </div>
+
+    <div class="row">
+    <form action='/hea' method="post" class="col s12">
+      <div class="row">
+        <div class="input-field col s4">
+            <label for="first_name"><b>Age</b></label>
+            <br>
+          <input placeholder="Age" name="Age" id="first_name" type="text" class="validate">
+        </div>
+        <div class="input-field col s4">
+
+          <label for="last_name"><b>Sex</b></label>
+            <br>
+          <input id="last_name" name="Sex" placeholder="1 for male 0 for female"  type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="_name"><b>CP</b></label>
+            <br>
+          <input id="_name" name="CP" placeholder="Chest pain type 0/1" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="fourth"><b>trestbps</b></label>
+            <br>
+          <input id="fourth" name="trestbps" placeholder="Resting blood pressure(in mm Hg)" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="fifth"><b>Serum cholestrol</b></label>
+            <br>
+          <input id="fifth" name="Serumcholestrol" placeholder="in mg/dl" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="sixth"><b>Fasting blood sugar</b></label>
+            <br>
+          <input id="sixth" name="fbs" placeholder="1 for true 0 for false" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="seventh"><b>RestECG</b></label>
+            <br>
+          <input id="seventh" name="restecg" placeholder="Resting electrocardiographic results" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="eight"><b>Maximum heart rate</b></label>
+            <br>
+          <input id="eight" name="maxheartrate" placeholder="Maximum heart rate" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="nine"><b>Exercise induced angina</b></label>
+            <br>
+          <input id="nine" name="exang" placeholder="1 for yes 0 for no" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="ten"><b>ST depression induced</b></label>
+            <br>
+          <input id="ten" name="stdepres" placeholder="ST depression induced by exercise relative to test" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="eleven"><b>Slope</b></label>
+            <br>
+          <input id="eleven" name="Slope" placeholder="Slope of the peak exercise ST segment" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="twelve"><b>Number of major vessels</b></label>
+            <br>
+          <input id="twelve" name="majvessels" placeholder="0-3 coloured by flourosopy" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="thirteen"><b>Thal</b></label>
+            <br>
+          <input id="thirteen" name="thal" placeholder="0-normal 1-fixed defect 2-reversable defect" type="text" class="validate">
+
+        </div>
+
+      </div>
+
+      <div class="row center">
+
+          <button type="submit" class="btn-large waves-effect waves-light orange">Predict Probability</button>
+      </div>
+    </form>
+      </div>
+
+      
+
+    </div>
+  </div>
+
+
+    <br><br>
+  </div>
+  </div>>
+  </body>
+</html>
+
