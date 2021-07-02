@@ -8,6 +8,6 @@ Disease Predictor: This model is trained with Logistic Regression(Classification
 
 Check out master branch for frontend css templates.
 
-Website link to check this out : https://healthassistant-predictor.herokuapp.com/
+Check out this project here : https://healthassistant-predictor.herokuapp.com/
 
 Telegram Bot link : https://tttttt.me/smartvirtualdoc_bot
